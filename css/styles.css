@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #674baf;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+main {
+  padding: 2rem;
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/bg-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+header {
+  padding: 2rem;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .illustration {
+  padding: 0 3rem;
+}
+
+.container .illustration img {
+  padding-top: 1rem;
+}
+
+.container .intro {
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .intro .content {
+  margin: 2rem 0;
+}
+
+.container .intro .content .desc {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.container .intro button {
+  display: inline-block;
+  width: 40%;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  background: white;
+  color: #674baf;
+  text-decoration: none;
+  border-radius: 2rem;
+  border: none;
+}
+
+.container .intro button:hover {
+  color: white;
+  background: #e882e8;
+}
+
+.socials {
+  text-align: right;
+}
+
+.socials button {
+  margin: 0.1rem;
+  background: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 5px;
+  color: white;
+}
+
+.socials button:hover {
+  color: #e882e8;
+  border: 2px solid #e882e8;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 2rem;
+  }
+  main {
+    padding: 2rem;
+    max-width: 100vw;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .illustration {
+    width: 100%;
+  }
+  .container .illustration img {
+    width: 100%;
+  }
+  .container .intro {
+    text-align: center;
+    padding: 2rem;
+  }
+  .container .intro button {
+    margin: 0 auto 3rem auto;
+  }
+  .socials {
+    text-align: center;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
